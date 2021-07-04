@@ -2,7 +2,7 @@
 
 WebFontConfig = {
   google:{ families: ['Righteous'] },
-  active: function(){FiveOhFiveFont();},
+  active: function(){FourOhFourFont();},
 };
 (function(){
   var wf = document.createElement("script");
@@ -12,12 +12,12 @@ WebFontConfig = {
 })();
 
 
-var FiveOhFive = document.getElementById("five");
-var FiveOhFiveContext = FiveOhFive.getContext("2d");
-FiveOhFiveFont(FiveOhFiveContext, FiveOhFive); FiveOhFiveContext.globalCompositeOperation = 'destination-out';
+var FourOhFour = document.getElementById("four");
+var FourOhFourContext = FourOhFour.getContext("2d");
+FourOhFourFont(FourOhFourContext, FourOhFour); FourOhFourContext.globalCompositeOperation = 'destination-out';
 
-function FiveOhFiveFont(ctx, canvas) {
-  FiveOhFiveContext.fillText("404", 275, 100);
+function FourOhFourFont(ctx, canvas) {
+  FourOhFourContext.fillText("404", 275, 100);
   var grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
   grad.addColorStop(0, '#000');
   ctx.rect(0, 0, canvas.width, canvas.height);
