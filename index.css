@@ -449,6 +449,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: system, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   margin: 0;
+  background-color: #202124;
   color: #fafafa;
   font-size: 16px;
   line-height: 1.5;
@@ -468,12 +469,12 @@ p {
 
 .container {
   position: relative;
-  margin: 10px auto;
-  /* padding: 20px; */
-  /* width: 500px; */
+  /* margin: 20px auto; */
+  width: 500px;
   display: flex;
   align-items: flex-start;
 }
+
 .container .tabs {
   display: block;
   position: relative;
