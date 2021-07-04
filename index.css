@@ -115,9 +115,10 @@ header {
 
 .inner {
   /* max-width: 35rem; */
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   color: #fff;
-  padding: 0 2rem;
 }
 
 .title {
@@ -386,7 +387,7 @@ table {
 th,
 td {
   text-align: left;
-  padding: 8px;
+  /* padding: 8px; */
 }
 
 /* width */        
@@ -468,7 +469,7 @@ p {
 .container {
   position: relative;
   margin: 10px auto;
-  padding: 20px;
+  /* padding: 20px; */
   /* width: 500px; */
   display: flex;
   align-items: flex-start;
