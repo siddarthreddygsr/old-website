@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 body{
   background-color: #161c23;
   font-family: "Poppins", sans-serif;
@@ -468,6 +470,14 @@ p {
 }
 
 .container {
+  position: relative;
+  margin: 10px auto;
+  /* padding: 20px; */
+  /* width: 500px; */
+  display: flex;
+  align-items: flex-start;
+}
+.container1 {
   position: relative;
   /* margin: 20px auto; */
   width: 500px;
