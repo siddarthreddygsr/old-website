@@ -1,13 +1,3 @@
-const hamburger_menu = document.querySelector(".hamburger-menu");
-const container = document.querySelector(".container");
-
-hamburger_menu.addEventListener("click", () => {
-  container.classList.toggle("active");
-});
-$(window).on("load",function(){
-  $(".loader-container").fadeOut(1000);
-});
-
 const tabs = document.querySelector('.tabs');
 
 tabs.addEventListener('click', e => handleClick(e));
@@ -32,3 +22,17 @@ function handleClick(e) {
   activeContent.classList.remove('visible');
   currentContent.classList.add('visible');
 }
+
+
+
+
+const hamburger_menu = document.querySelector(".hamburger-menu");
+const container = document.querySelector(".container");
+
+hamburger_menu.addEventListener("click", () => {
+  container.classList.toggle("active");
+});
+$(window).on("load",function(){
+  $(".loader-container").fadeOut(1000);
+});
+
