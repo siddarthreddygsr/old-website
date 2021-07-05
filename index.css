@@ -481,7 +481,7 @@ p {
   position:relative;
   /* padding-left: 33vw; */
   /* margin: 20px auto; */
-  width: 500px;
+  width: 50vw;
   display: flex;
   align-items: flex-start;
 }
