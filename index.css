@@ -371,7 +371,7 @@ footer{
 }
 .footer-bottom span{
   text-transform: uppercase;
-  opacity: .4;
+  opacity: 2;
   font-weight: 200;
 }
 
@@ -469,7 +469,7 @@ p {
   margin: 0;
 }
 
-.container {
+.container1 {
   position: relative;
   margin: 10px auto;
   /* padding: 20px; */
@@ -478,20 +478,21 @@ p {
   align-items: flex-start;
 }
 .container1 {
-  position: relative;
+  position:relative;
+  /* padding-left: 33vw; */
   /* margin: 20px auto; */
   width: 500px;
   display: flex;
   align-items: flex-start;
 }
 
-.container .tabs {
+.container1 .tabs {
   display: block;
   position: relative;
   z-index: 3;
   width: max-content;
 }
-.container .tabs .tab {
+.container1 .tabs .tab {
   width: 100px;
   height: 40px;
   text-align: center;
@@ -502,22 +503,22 @@ p {
   border-left: 2px solid #5f6368;
   color: #5f6368;
 }
-.container .tabs .tab:hover {
+.container1 .tabs .tab:hover {
   color: #fff;
 }
-.container .tabs .tab.active {
+.container1 .tabs .tab.active {
   color: #fff;
 }
-.container .tabs .tab.tab-1.active ~ .highlighter {
+.container1 .tabs .tab.tab-1.active ~ .highlighter {
   transform: translateY(0px);
 }
-.container .tabs .tab.tab-2.active ~ .highlighter {
+.container1 .tabs .tab.tab-2.active ~ .highlighter {
   transform: translateY(40px);
 }
-.container .tabs .tab.tab-3.active ~ .highlighter {
+.container1 .tabs .tab.tab-3.active ~ .highlighter {
   transform: translateY(80px);
 }
-.container .tabs .highlighter {
+.container1 .tabs .highlighter {
   display: block;
   background: #fff;
   width: 2px;
@@ -530,17 +531,17 @@ p {
   transition-delay: 0.1s;
   z-index: 10;
 }
-.container .tabs a:first-of-type {
+.container1 .tabs a:first-of-type {
   border-top-left-radius: 2px;
 }
-.container .tabs a:last-of-type {
+.container1 .tabs a:last-of-type {
   border-top-right-radius: 2px;
 }
-.container .content {
+.container1 .content {
   position: relative;
   padding: 0 20px;
 }
-.container .content__section {
+.container1 .content__section {
   position: absolute;
   top: 0;
   left: 0;
@@ -548,11 +549,33 @@ p {
   z-index: 0;
   transition: opacity 0s ease;
 }
-.container .content__section.visible {
+.container1 .content__section.visible {
   position: relative;
   opacity: 1;
   width: 100%;
   height: auto;
   transition: opacity 0.5s ease;
   z-index: 2;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
+
+
+.welcome h1 {
+  padding: 20px;
+  font-size: 100px;
+}
+
+.welcome .splitting .char {
+  animation: slide-in 1s cubic-bezier(.3, 0, .3, 1) both;
+  animation-delay: calc(60ms * var(--char-index));
+  color: saturate(lighten(#182952, 55%), 60%);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(1em);
+    opacity: 0;
+  }
 }

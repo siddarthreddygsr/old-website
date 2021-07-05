@@ -1,3 +1,5 @@
+
+
 const tabs = document.querySelector('.tabs');
 
 tabs.addEventListener('click', e => handleClick(e));
@@ -22,6 +24,8 @@ function handleClick(e) {
   activeContent.classList.remove('visible');
   currentContent.classList.add('visible');
 }
+
+
 
 
 
