@@ -1,4 +1,5 @@
 
+window.onresize = function(){ location.reload(); }
 
 var init = function(){
   var isMobile = navigator.userAgent &&
