@@ -7,6 +7,29 @@
     <title>CyberTrauma's Portfolio</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+      function display_c() {
+        var refresh = 1000;
+        mytime = setTimeout('display_ct()', refresh)
+      }
+  
+      function display_ct() {
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+      }
+    </script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $.getJSON("https://api.ipify.org?format=json",
+        function (data) {
+          $("#ip").html(data.ip);
+        })
+    </script>
+  
+  
+  
   </head>
   <body>
     <div class="container">
@@ -114,54 +137,31 @@
                       </div>
                     </div>
                   </div>
-
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
-                  <p>.</p>
+                  <div class="card-main">
+                  <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">
+                            Something Awesome
+                        </h2>
+                        <p class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis posnnnsimus eveniet iure moll
+                        </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-content">
+                      <h2 class="card-title">
+                          Something Awesome
+                      </h2>
+                      <p class="card-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis posnnnsimus eveniet iure moll
+                      </p>
+                      <a href="#" class="button">Read More</a>
+                  </div>
+              </div>
+              </div>
                   <p>.</p>
                   <p>.</p>
                   <p>.</p>
@@ -183,20 +183,26 @@
                   <!-- THIS IS THE REALL FOOTER-->
                   <section id="footer-old">
                     <div class="footer-content">
-                          <h3>g siddarth reddy</h3>
-                            <ul class="socials">
-                                <li><a href="https://www.instagram.com/siddarthreddygsr/"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="mailto: siddarthreddy4923@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                                <li><a href="https://github.com/siddarthreddygsr"><i class="fa fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/siddarthreddygsr/"><i class="fa fa-linkedin-square"></i></a></li>
-                                <li><a href="https://siddarthreddygsr.github.io/terminal"><i class="fa fa-terminal"></i></a></li>
-                            </ul> 
-                            <p>+91 73866 42433</p>
-                      </div>
-                      <div class="footer-bottom">
-                          <p>copyright &copy;2020 cyberTrauma. designed by <b>SIDDARTH</b></p>
-                      </div>
-                    </section>
+                      <span id='ct' style="font-size:15px;padding-top: 2vh;"></span>
+                      <p>You are being watched at:</p>
+                      <p id="ip"></p>
+                      <h3>g siddarth reddy</h3>
+                      <ul class="socials">
+                        <li><a href="https://www.instagram.com/siddarthreddygsr/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="mailto: siddarthreddy4923@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/siddarthreddygsr"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/siddarthreddygsr/"><i
+                              class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://siddarthreddygsr.github.io/terminal"><i class="fa fa-terminal"></i></a>
+                        </li>
+                      </ul>
+                      <p>+91 73866 42433</p>
+                    </div>
+                    <div class="footer-bottom">
+                      <p>copyright &copy;2020 cyberTrauma. designed by <b>SIDDARTH</b></p>
+                    </div>
+                  </section>
                   </div>
               </div>
             </div>
