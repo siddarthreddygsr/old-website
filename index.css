@@ -631,6 +631,13 @@ span {
     display: inline-block
   }
 }
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+      .anime{
+        padding-top: 10vh;
+      }
+  }
+}
 @media all and (min-resolution:.001dpcm) { 
   @supports (-webkit-appearance:none) {
     .left{
@@ -639,13 +646,16 @@ span {
     .right{
       transform: skew(0deg, 15deg);
     }
+    .anime{
+      padding-top: 23vh;
+    }
   }
 }
 .vertical_box_title{
   font-size: 10px;
 }
 .anime{
-  padding-top: 35vh;
+  /* padding-top: 15vh; */
   height: 10vh;
 }
 
@@ -712,6 +722,7 @@ span {
   font-size: 20px;
 }
 .card-main{
+  padding-top: 5vh;
 	display: flex;
   text-align: center;
   display: block;
