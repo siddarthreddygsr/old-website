@@ -121,7 +121,7 @@ header {
   /* max-width: 35rem; */
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
 }
 
@@ -460,4 +460,23 @@ p {
 
 .blog {  
   color: #fff;
+}
+.home a{
+  color: white;
+  font-size: large;
+  text-decoration: none;
+}
+.home a:hover{
+  color: aqua;
+}
+.home{
+  align-items: center;
+}
+
+.home button:hover{
+  color:aqua
+}
+
+ul{
+  list-style: none;
 }
