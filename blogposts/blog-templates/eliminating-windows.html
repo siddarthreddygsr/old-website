@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=1024">
+    <title>CyberTrauma's Portfolio</title>
+    <link rel="stylesheet" href="blogs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        function display_c() {
+            var refresh = 1000;
+            mytime = setTimeout('display_ct()', refresh)
+        }
+
+        function display_ct() {
+            var x = new Date()
+            document.getElementById('ct').innerHTML = x;
+            display_c();
+        }
+    </script>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("#blog-content").load("../text-files/eliminating-windows.html"); 
+        });
+    </script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+                $("#ip").html(data.ip);
+            })
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu">
+                <h3 class="logo">CyberTrauma</h3>
+
+                <!-- this this the nav bar button -->
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="main">
+                <!-- HEADER STARTS HERE -->
+                <h1>
+                </h1>
+                <header>
+                    <div class="overlay">
+                        <div class="inner">
+                            <div class="scroll">
+                                <div class="anime">
+                                    
+                                        <div class="tabs"></div>
+                                        <div class="blog-content" style="height: 100vh; width: 100vw; padding-left: 10vw; padding-right: 10vw;">
+                                            <script src="../text-files/elmwindows.js"></script>
+                                        </div>
+
+                                    <!-- THIS IS THE REALL FOOTER-->
+                                    <section id="footer-old">
+                                        <div class="footer-content">
+                                            <span id='ct' style="font-size:15px;padding-top: 2vh;"></span>
+                                            <p>You are being watched at:</p>
+                                            <p id="ip"></p>
+                                            <h3>g siddarth reddy</h3>
+                                            <ul class="socials">
+                                                <li><a href="https://www.instagram.com/siddarthreddygsr/"><i
+                                                            class="fa fa-instagram"></i></a>
+                                                </li>
+                                                <li><a href="mailto: siddarthreddy4923@gmail.com"><i
+                                                            class="fa fa-envelope"></i></a></li>
+                                                <li><a href="https://github.com/siddarthreddygsr"><i
+                                                            class="fa fa-github"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/in/siddarthreddygsr/"><i
+                                                            class="fa fa-linkedin-square"></i></a></li>
+                                                <li><a href="https://siddarthreddygsr.github.io/terminal"><i
+                                                            class="fa fa-terminal"></i></a>
+                                                </li>
+                                            </ul>
+                                            <p>+91 73866 42433</p>
+                                        </div>
+                                        <div class="footer-bottom">
+                                            <p>copyright &copy;2020 cyberTrauma. designed by <b>SIDDARTH</b></p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                </header>
+            </div>
+
+            <div class="shadow one"></div>
+            <div class="shadow two"></div>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="/index.html" style="--i: 0.05s;">Home</a>
+                </li>
+                <li>
+                    <a href="#" style="--i: 0.1s;">Projects</a>
+                </li>
+                <li>
+                    <a href="#" style="--i: 0.15s;">Resume</a>
+                </li>
+                <li>
+                    <a href="https://siddarthreddygsr.github.io/terminal" style="--i: 0.2s;">Terminal</a>
+                </li>
+                <li>
+                    <a href="/Blogs/blogs.html" style="--i: 0.2s;">Blogs</a>
+                </li>
+                <li>
+                    <a href="#footer-old" style="--i: 0.3s;">Contact Me</a>
+                </li>
+                <li>
+                    <a href="/admin.html" style="--i: 0.15s;">Admin Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="blogs.js"></script>
+
+</body>
+
+</html>
