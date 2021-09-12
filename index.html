@@ -7,7 +7,7 @@
     <title>CyberTrauma's Portfolio</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function display_c() {
         var refresh = 1000;
         mytime = setTimeout('display_ct()', refresh)
@@ -18,13 +18,13 @@
         document.getElementById('ct').innerHTML = x;
         display_c();
       }
-    </script>
+    </script> -->
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-      $.getJSON("https://api.ipify.org?format=json",
+      $.getJSON("https://ipinfo.io/json",
         function (data) {
-          $("#ip").html(data.ip);
+          $("#ip").html("You are being watched at " + data.ip + "<br>I know that you are at " + data.city + "," + data.region +"." + "<br> You are somewhere around " + data.loc + "(approx to 13 miles)");
         })
     </script>
   
@@ -213,8 +213,8 @@
                   <section id="footer-old">
                     <div class="footer-content">
                       <span id='ct' style="font-size:15px;padding-top: 2vh;"></span>
-                      <p>You are being watched at:</p>
                       <p id="ip"></p>
+                      
                       <h3>g siddarth reddy</h3>
                       <ul class="socials">
                         <li><a href="https://www.instagram.com/siddarthreddygsr/"><i class="fa fa-instagram"></i></a>

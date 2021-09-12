@@ -457,3 +457,26 @@ p {
 .title{
   color: rgb(14, 153, 245);
 }
+
+.blog-name{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  justify-content: space-between;
+}
+
+li{
+  list-style: none;
+}
+
+.blog-title{
+  max-height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}

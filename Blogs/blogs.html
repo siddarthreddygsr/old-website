@@ -23,10 +23,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $.getJSON("https://api.ipify.org?format=json",
-            function (data) {
-                $("#ip").html(data.ip);
-            })
+        $.getJSON("https://ipinfo.io/json",
+          function (data) {
+            $("#ip").html("You are being watched at " + data.ip + "<br>I know that you are at " + data.city + "," + data.region +"." + "<br> You are somewhere around " + data.loc + "(approx to 13 miles)");
+          })
     </script>
 
 
@@ -56,18 +56,20 @@
                         <div class="inner">
                             <div class="scroll">
                                 <div class="anime">
-                                    
                                         <div class="tabs"></div>
                                         <h3 class="title">BLOGS</h3>
-                                        <div class=console>
-                                            <li><a href="/blogposts/blog-templates/eliminating-windows.html">Eliminating Windows</a></li>
+                                        <div class=console style="padding-left: 10vw;padding-right: 10vw;">
+                                            <br>
+                                            <li><a href="/blogposts/blog-templates/eliminating-windows.html" style="display: flex;justify-content: space-between;"><h2>Eliminating Windows</h2><h2>13th Sep, 2021</h2></a></li>
+                                            <br>
+                                            <li><a href="/blogposts/blog-templates/windows11.html" style="display: flex;justify-content: space-between;"><h2>My Opionion on Windows 11</h1><h2>13th Sep, 2021</h2></a></li>
+                                            <br>
                                         </div>
 
                                     <!-- THIS IS THE REALL FOOTER-->
                                     <section id="footer-old">
                                         <div class="footer-content">
                                             <span id='ct' style="font-size:15px;padding-top: 2vh;"></span>
-                                            <p>You are being watched at:</p>
                                             <p id="ip"></p>
                                             <h3>g siddarth reddy</h3>
                                             <ul class="socials">
@@ -103,7 +105,7 @@
         <div class="links">
             <ul>
                 <li>
-                    <a href="index.html" style="--i: 0.05s;">Home</a>
+                    <a href="/index.html" style="--i: 0.05s;">Home</a>
                 </li>
                 <li>
                     <a href="#" style="--i: 0.1s;">Projects</a>
@@ -115,13 +117,13 @@
                     <a href="https://siddarthreddygsr.github.io/terminal" style="--i: 0.2s;">Terminal</a>
                 </li>
                 <li>
-                    <a href="blogs.html" style="--i: 0.2s;">Blogs</a>
+                    <a href="/Blogs/blogs.html" style="--i: 0.2s;">Blogs</a>
                 </li>
                 <li>
                     <a href="#footer-old" style="--i: 0.3s;">Contact Me</a>
                 </li>
                 <li>
-                    <a href="admin.html" style="--i: 0.15s;">Admin Login</a>
+                    <a href="/admin.html" style="--i: 0.15s;">Admin Login</a>
                 </li>
             </ul>
         </div>
