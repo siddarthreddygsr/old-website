@@ -20,8 +20,13 @@
             display_c();
         }
     </script>
-
+     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("#blog-content").load("../text-files/eliminating-windows.html"); 
+        });
+    </script>
     <script>
         $.getJSON("https://ipinfo.io/json",
           function (data) {
@@ -56,16 +61,19 @@
                         <div class="inner">
                             <div class="scroll">
                                 <div class="anime">
+                                    
                                         <div class="tabs"></div>
-                                        <h3 class="title">BLOGS</h3>
-                                        <div class=console style="padding-left: 10vw;padding-right: 10vw;">
-                                            <br>
-                                            <li><a href="/blogposts/blog-templates/eliminating-windows.html" style="display: flex;justify-content: space-between;"><h2>Eliminating Windows</h2><h2>13th Sep, 2021</h2></a></li>
-                                            <br>
-                                            <li><a href="/blogposts/blog-templates/windows11.html" style="display: flex;justify-content: space-between;"><h2>My Opionion on Windows 11</h1><h2>13th Sep, 2021</h2></a></li>
-                                            <br>
-                                            <li><a href="/blogposts/blog-templates/openmp.html" style="display: flex;justify-content: space-between;"><h2>Parallaizing my code</h1><h2>14th Sep, 2021</h2></a></li>
-                                            <br>
+                                        <div class="home" style="padding-left: 10vw;padding-bottom: 1vw;padding-top: 1vw;">
+                                            <ul>
+                                                <li>
+                                                    <a href="/Blogs/blogs.html" style="--i: 0.3s;">
+                                                    <i class="fa fa-chevron-left"></i> Blog Menu
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="blog-content" style=" width: 100vw; padding-left: 10vw; padding-right: 10vw; padding-bottom: 10vh;">
+                                            <script src="../text-files/omp-parallel.js"></script>
                                         </div>
 
                                     <!-- THIS IS THE REALL FOOTER-->

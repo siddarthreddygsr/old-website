@@ -480,3 +480,12 @@ p {
 ul{
   list-style: none;
 }
+
+.code{
+  background-color: #161c23;
+  border-radius: 10px;
+}
+p{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
