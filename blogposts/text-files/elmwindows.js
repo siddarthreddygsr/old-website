@@ -15,4 +15,5 @@ document.write(`
         <br>
         <img src="/images/windowsishit.png" alt="Windows" style="display: block; margin: 0 auto; width:80vw;"><br>
         <p style="width:40vw"> Dear Microsoft,<br>I can understand that some part of ur shit is broken even without your dumb error messages. Seriously Microsoft? Was that all you could do? Couldn't you have displayed atleast 3-4 lines explaining what was causing the issue?</p>
+        <p><span><b>Update:</b></span> I switched to Arch Linux with i3wm. Yes, I have dmenu and some scripts and a bunch of aliases to make my life easier on arch. Yes, I ofc enabled parallel downloads in pacman. Ok If you are read it till here then I am planning to hosting mirrors for some linux distributions and I will try to write a different blog about it.</p>
 `);
